@@ -12,18 +12,83 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
+.active{
+    color:crimson;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+/*NAVBAR SECTION*/
+
+
+.navbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    max-height: 10px;
+    bottom:0;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+   color: whitesmoke;
+}
+
+.navlinks{
+    display: flex;
+  flex-direction: row;
+   
+    
+}
+
+
+.navlinks li{
+    margin:0px 30px;
+    font-size: 3.2vmin;
+}
+
+/*.abc{
+    border-radius: 50px;
+    background-color: crimson;
+    color: white;
+    padding: 8px 13px;
+    text-align: center;
+    font-size: 3vmin;
+    margin-top: 30px;
+    
+
+}*/
+
+/*.abc:hover{
+    background-color: whitesmoke;
+    color: crimson;
+    font-size: 4vmin;
+    border:2px solid black;
+}*/
+
+
+/*NAVBAR SECTION*/
+
+/*HEADER SECTION STARTED*/
+
 header{
    height: 100vh;
    width: 100vw;
-   background-image: url(./images/bg.jpg);
+   background-image: url(./images/bg.jpeg);
    background-position: bottom;
    background-size: cover;
    display: flex;
    align-items: center;
    justify-content: center;
-   opacity: 0.9;
-
+  
+ 
 }
+
+
 
 .header-content{
     margin-bottom: 150px;
@@ -31,21 +96,14 @@ header{
     text-align: center;
 }
 
-.opacity{
-    background-color: black;
-    height: 100vh;
-    
-    position: absolute;
-    opacity: 0.7;
-    z-index: 2;
-}
+
 .header-content h2{
     font-size: 5vmin;
     margin-bottom: 20px;
 }
 
 .header-content h1{
-    font-size: 10vmin;
+    font-size: 9vmin;
     margin-top: 5px;
     margin-bottom: 30px;
 
@@ -64,11 +122,11 @@ header{
     border-radius: 50px;
     background-color: crimson;
     color: white;
-    padding: 8px;
+    padding: 8px 13px;
     text-align: center;
     font-size: 3vmin;
     margin-top: 30px;
-    border: 2px  solid rgb(228, 211, 211);
+    
 
 }
 
@@ -78,3 +136,31 @@ header{
     font-size: 4vmin;
     border:2px solid black;
 }
+
+/*HEADER SECTION ENDED*/
+
+
+/*MOBILE DEVICES*/
+
+@media  only screen and { max-width: 850px}{
+    .navpar{
+        padding: 0;
+    }
+
+    .logo{
+        position:absolute;
+        top:30px;
+        left:30px;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
